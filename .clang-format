@@ -1,0 +1,9 @@
+---
+Language: Cpp
+ColumnLimit: 80
+UseTab: Always
+IndentWidth: 8
+BreakBeforeBraces: Linux
+AllowShortIfStatementsOnASingleLine: false
+AlignConsecutiveDeclarations: true
+IndentCaseLabels: false
