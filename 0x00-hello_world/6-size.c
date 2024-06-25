@@ -10,5 +10,5 @@ int main(int argc, char *argv[]) {
   printf("size of long: %lu byte(s) \n", sizeof(long));
   printf("size of short: %lu byte(s) \n", sizeof(short));
   printf("size of float: %lu byte(s) \n", sizeof(float));
-  return 0;
+  return (0);
 }
