@@ -1,25 +1,32 @@
 #include <stdio.h>
 
+char digit(int digit) { return digit % 10 + '0'; }
+
 int main(int argc, char *argv[])
 {
-	int i, j;
+	int a, b, c;
 
-	for (i = 0; i < 9; i++) {
-		for (j = i + 1; j <= 9; j++) {
+	for (a = 0; a < 9; a++) {
+		for (b = a + 1; b <= 9; b++) {
+			for (c = b + 1; c <= 9; c++) {
+				if (digit(a) == digit(b) ||
+				    digit(a) == digit(c) ||
+				    digit(b) == digit(c))
+					continue;
 
-			if (i % 10 + '0' == j % 10 + '0')
-				continue;
+				putchar(digit(a));
+				putchar(digit(b));
+				putchar(digit(c));
 
-			putchar(i % 10 + '0');
-			putchar(j % 10 + '0');
+				if (digit(a) == 9 && digit(b) == 9 &&
+				    digit(c) == 9)
+					continue;
 
-			if (i % 10 == 9 && j % 10 == 9)
-				continue;
-			putchar(',');
-			putchar(' ');
+				putchar(',');
+				putchar(' ');
+			}
 		}
+		putchar('\n');
 	}
-	putchar('\n');
-
 	return (0);
 }
