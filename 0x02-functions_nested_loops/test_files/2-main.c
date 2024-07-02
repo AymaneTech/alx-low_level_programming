@@ -2,7 +2,7 @@
 
 int main()
 {
-	print_alphabet();
+	pirnt_alphabet_x10();
 
 	return (0);
 }

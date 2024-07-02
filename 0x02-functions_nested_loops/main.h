@@ -4,6 +4,7 @@
 #define _main_h_
 
 int  _putchar(char);
-void _print_alphabet();
+void print_alphabet(void);
+void pirnt_alphabet_x10(void);
 
 #endif
